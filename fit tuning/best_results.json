@@ -1,0 +1,35 @@
+{
+    "XGBoost": {
+        "best_params": {
+            "classifier__subsample": 0.8,
+            "classifier__scale_pos_weight": 1,
+            "classifier__n_estimators": 500,
+            "classifier__min_child_weight": 1,
+            "classifier__max_depth": 8,
+            "classifier__learning_rate": 0.01,
+            "classifier__colsample_bytree": 0.8
+        },
+        "val_auc": 0.9158822620886315
+    },
+    "LightGBM": {
+        "best_params": {
+            "classifier__subsample": 0.9,
+            "classifier__scale_pos_weight": 1.5,
+            "classifier__n_estimators": 500,
+            "classifier__max_depth": 6,
+            "classifier__learning_rate": 0.01,
+            "classifier__colsample_bytree": 0.8
+        },
+        "val_auc": 0.9157625067506979
+    },
+    "CatBoost": {
+        "best_params": {
+            "classifier__subsample": 0.8,
+            "classifier__learning_rate": 0.05,
+            "classifier__l2_leaf_reg": 3,
+            "classifier__iterations": 1000,
+            "classifier__depth": 8
+        },
+        "val_auc": 0.9155845704729126
+    }
+}
